@@ -1,0 +1,244 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    background-color: #f9f9f9;
+    color: #13294b;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #242424;
+    padding: 0.5em;
+    justify-content: center;
+    display: flex;
+    z-index: 1000;
+}
+
+.navbar-box {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 1rem;
+    text-align: right;
+}
+
+.navbar-box a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.navbar-box a:hover {
+    text-decoration: underline;
+}
+
+.intro {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap; 
+}
+
+.intro img {
+    border-radius: 50%;
+    max-width: 150px;
+    margin-left: 30px;
+}
+
+.intro-text {
+    max-width: 650px;
+    text-align: justify;
+    padding: 10px;
+}
+
+.publication {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.publication h1 {
+    text-align: center;
+}
+
+.publication-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+.publication-item img {
+    width: 100%;
+    max-width: 150px;
+    margin-left: 0;
+}
+
+.publication-item-text {
+    width: 100%;
+    max-width: 700px;
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+.publication-item-text h1 {
+    margin: 0;
+    padding: 0;
+    justify-content: justify;
+    text-align: left;
+}
+
+.publication-item-text h1 a {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #13294b;
+    text-decoration: none;
+}
+
+.publication-item-text h1 a:hover {
+    text-decoration: underline;
+}
+
+.authors {
+    margin: 0 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.authors a {
+    font-weight: 400;
+    color: #d44444;
+    text-decoration: none;
+}
+
+.authors a:hover {
+    text-decoration: underline;
+}
+
+.publication-item-text p {
+    margin: 0 0;
+    padding: 0;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.document-links {
+    margin: 0.5rem 0;
+}
+
+.icon-button i {
+    margin-right: 0.2rem;
+}
+.icon-button-static {
+    display: inline-block;
+    margin: 0.5rem 0.3rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    font-weight: 400;
+    text-decoration: none;
+    border: 1px solid #a52a2a;
+    color: #a52a2a;
+    background-color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+}
+.icon-button {
+    display: inline-block;
+    margin: 0.5rem 0.3rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    font-weight: 400;
+    text-decoration: none;
+    border: 1px solid #13294b;
+    color: #13294b;
+    background-color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.icon-button:hover {
+    background-color: #13294b;
+    color: white;
+}
+
+.contact {
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-icon-button {
+    display: inline-flex; 
+    align-items: center; 
+    margin: 0.5rem; 
+    text-decoration: none;
+    color: #13294b;
+    font-weight: 400;
+    border: 1px solid transparent; 
+    padding: 0.2rem 0.5rem;
+}
+
+.contact-icon-button i {
+    margin-right: 0.5rem; 
+}
+
+.contact-icon-button:hover {
+    color: #d44444; 
+}
+
+footer {
+    text-align: center;
+    margin: 2rem 0;
+    color: #6c757d;
+}
+
+
+
+@media (max-width: 768px) {
+    .navbar-box {
+        text-align: center;
+    }
+
+    .navbar-box a {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .intro {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .intro img {
+        max-width: 120px;
+    }
+
+    .publication-item {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .publication-item img {
+        margin: 0 auto;
+    }
+
+    .publication-item-text {
+        text-align: center;
+    }
+
+    .publication-item-text h1 {
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        text-align: center;
+    }
+        .contact-icon-button {
+        display: inline-block; 
+        margin: auto 0.7rem; 
+    }
+}
